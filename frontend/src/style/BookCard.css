@@ -1,0 +1,57 @@
+.book-card-3d {
+  width: 200px;
+  min-height: 320px;
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  box-shadow: var(--shadow, 0 4px 10px rgba(0,0,0,0.1));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card-3d:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.book-cover-container {
+  height: 200px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-cover-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.book-cover-placeholder {
+  font-size: 2rem;
+  color: #999;
+}
+
+.book-info-3d {
+  padding: 0.8rem;
+}
+
+.book-title-3d {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.book-author-3d {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+}
+
+.book-description-3d {
+  font-size: 0.8rem;
+  color: #444;
+  line-height: 1.2;
+}

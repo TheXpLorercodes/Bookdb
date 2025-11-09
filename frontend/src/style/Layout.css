@@ -1,0 +1,52 @@
+/* ==============================
+   GLOBAL THEME VARIABLES
+   ============================== */
+
+/* Light Mode (default) */
+:root {
+  --bg: #fefefe;            /* page background */
+  --card-bg: #f9f5f0;       /* cream color for cards/components */
+  --text: #1a1a1a;          /* main text */
+  --text-subtle: #555;
+  --primary: #e67e22;       /* accent orange */
+  --secondary: #3498db;     /* secondary blue */
+  --accent-start: #e67e22;
+  --accent-end: #f39c12;
+  --radius: 12px;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode */
+.dark {
+  --bg: #121212;           /* dark background */
+  --card-bg: #1e1e1e;      /* darker but distinct for components */
+  --text: #f5f5f5;         /* light text */
+  --text-subtle: #bbb;
+  --primary: #ff9800;      /* warm accent in dark mode */
+  --secondary: #03a9f4;
+  --accent-start: #ff9800;
+  --accent-end: #ff5722;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Apply background and text globally */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* For cards/sections */
+section,
+.card,
+.book-card-3d,
+.discussion-item {
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, color 0.3s ease;
+}

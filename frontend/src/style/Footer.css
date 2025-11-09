@@ -1,0 +1,138 @@
+/* Footer.css */
+
+/* Footer wrapper */
+.footer-3d {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 -6px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer grid layout */
+.footer-content-3d {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Each footer section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #444;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* Bottom strip */
+.footer-bottom-3d {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #000;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* --------------------------- */
+/* Floating quick action button */
+/* --------------------------- */
+
+.floating-button-container {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 110;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+/* Reuse same FAB styling as earlier */
+.floating-button-3d {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.floating-button-3d:hover {
+  background: #000;
+  transform: scale(1.08);
+}
+
+/* Dropdown menu */
+.floating-dropdown-3d {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.25s ease;
+  margin-bottom: 0.5rem;
+}
+
+.floating-dropdown-3d.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Links inside dropdown */
+.floating-dropdown-3d a {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: background 0.25s ease;
+}
+
+.floating-dropdown-3d a:hover {
+  background: rgba(0, 0, 0, 0.08);
+}

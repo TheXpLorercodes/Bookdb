@@ -1,0 +1,32 @@
+.mylibrary-container {
+  padding: 2rem;
+}
+
+.mylibrary-row {
+  margin-bottom: 3rem;
+}
+
+.mylibrary-row h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.mylibrary-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.mylibrary-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.book-card-3d {
+  min-width: 160px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}

@@ -1,0 +1,41 @@
+/* Light mode (default) */
+:root {
+  --bg: #f9f7f4;        /* page background */
+  --text: #2a2a2a;      /* main text */
+  --primary: #e07a5f;   /* accent (terracotta) */
+  --secondary: #3d6f5c; /* accent (sage green) */
+  --card-bg: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+:root.dark {
+  --bg: #1f1f1f;
+  --text: #f9f7f4;
+  --primary: #e07a5f;
+  --secondary: #6aa087;
+  --card-bg: #2a2a2a;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text);
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+}

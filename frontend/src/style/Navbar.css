@@ -1,0 +1,114 @@
+/* ===========================
+   NAVBAR STYLES
+   =========================== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 0 0 16px 16px; /* Rounded except top */
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Left section: Logo */
+.navbar-left .navbar-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Center links */
+.navbar-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-center a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+  transition: color 0.25s ease;
+}
+
+.navbar-center a:hover {
+  color: var(--primary);
+}
+
+/* Right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Toggle Dark Mode Button */
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.15);
+}
+
+/* Avatar (cartoon style emoji) */
+.avatar {
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Auth buttons (Sign in/up) */
+.navbar-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  background: var(--primary);
+  color: #fff;
+  box-shadow: var(--shadow);
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.navbar-btn.secondary {
+  background: var(--secondary);
+}
+
+.navbar-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* 3D shadow effect */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15),
+              0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive (mobile stack) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .navbar-center {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

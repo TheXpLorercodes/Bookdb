@@ -1,0 +1,53 @@
+.searchbar-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.searchbar-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.searchbar-results {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.searchbar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.searchbar-item:hover {
+  background: #f5f5f5;
+}
+
+.searchbar-item img {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.searchbar-author {
+  font-size: 0.85rem;
+  color: #666;
+}

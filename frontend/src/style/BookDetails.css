@@ -1,0 +1,43 @@
+.book-details-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+.book-details-card {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.book-cover {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.book-info h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-info h3 {
+  font-size: 1.2rem;
+  color: var(--text-subtle);
+  margin-bottom: 1rem;
+}
+
+.book-info p {
+  margin: 0.4rem 0;
+}
+
+.book-summary {
+  background: var(--card-bg, rgba(0,0,0,0.05));
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}

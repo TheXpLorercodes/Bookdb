@@ -1,0 +1,76 @@
+/* FloatingButton.css */
+
+/* Container */
+.floating-button-container-3d {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Floating button (FAB) */
+.floating-button-3d {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.floating-button-3d:hover {
+  background: #000;
+  transform: scale(1.08);
+}
+
+/* Drop-up menu */
+.drop-up-menu-3d {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.25s ease;
+}
+
+.drop-up-menu-3d.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Menu links */
+.drop-up-menu-3d a {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  min-width: 140px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: background 0.25s ease;
+}
+
+.drop-up-menu-3d a:hover {
+  background: rgba(0, 0, 0, 0.08);
+}

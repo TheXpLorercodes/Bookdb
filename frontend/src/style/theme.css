@@ -1,0 +1,11 @@
+:root {
+  --primary: #1e293b; /* dark navy */
+  --secondary: #3b82f6; /* blue */
+  --accent: #facc15; /* yellow accent */
+  --bg: #ffffff;
+  --bg-light: #f9fafb;
+  --text: #111827;
+  --muted: #6b7280;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
